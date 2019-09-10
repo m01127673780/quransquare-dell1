@@ -1,0 +1,1 @@
+# quransquare-dell1
