@@ -176,8 +176,8 @@ header{
 * 10. app review styles 
 ***************************/
  .app-review {
-    background: #f4f4f4;
-    padding-top: 8px;
+/*    background: #f4f4f4;
+*/    padding-top: 8px;
     padding-bottom: 120px;
     /* color: #000; */
 }
@@ -1884,15 +1884,67 @@ margin-right: 10px;
 
 
 
-
+.paths-setionpath-courses {
+    fill: #e74534;
+    stroke: #E24231;
+}
+ 
+.scetionpath-courses {
+  
+         margin-top: -7px;
+        padding-bottom: 50px;
+            background: #e74534;
+}
+.paths-app-review {
+    fill: #f4f4f4;
+    stroke:#f4f4f4;;
+}
+.app-review{
+    
+    background-color: #f4f4f4;
+     margin-top: -6px;
+}
+.paths-setionpath-footre {
+    fill: #2a333b;
+    stroke:#2a333b;;
+}
+.app-review{
+    
+    background-color: #f4f4f4;
+     margin-top: -6px;
+}
  
 
 
 
+ .div-whyus{
+margin-bottom: 120px!important;
+  }
 
 
+footer {
+    background: #2a333b;
+    padding-top: 0px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 43px;
+}
+.img-wave-footer {
+   margin-bottom: -150px;
+    background: #2a333b;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(180deg);
+}
 
 
+.footer-svg {
+    overflow: hidden;
+
+}
+.footer-svg .col-md-3  {
+        margin-top: 30px;
+
+}
 
 
 

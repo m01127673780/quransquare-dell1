@@ -58,7 +58,7 @@
 
 
   <a  class="  " data-toggle="modal" data-target="#myModal">
-    contact/
+    login/
   </a>
                       </a>
                         <a  style="display: inline-block;" class="nav-link" href="sunup.html">sunup/</a>
@@ -113,8 +113,111 @@
 <!--====== End Slider =============================== -->
  
 <!-- ==================================== -->
+
+ <center>
+<!-- <form method="post" action ="{{url('insert/news')}}">
+  <input type="text" name="titel">
+  <input type="text" name="desc">
+ </form> -->
+
+ <form method="post" action ="{{url('insert/news')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}">
+  <div class="form-group" style="width: 50%">
+    <label for="title">Email address</label>
+    <input type="text" class="form-control" name="name" placeholder="name@example.com">
+  </div>
+   <div class="form-group" style="width: 50%">
+    <label for="desc">Example textarea</label>
+    <textarea class="form-control" name="password" rows="3"></textarea>
+  </div>
+  <input type="submit" name="">
+</form>
+</center>
 <!-- ==================================== -->
- 
+
+   <!-- =======start Videos ========================= --> 
+      <!----------------start  section title---------------------->
+<section class=" title" id="Videos">
+    <div class="container-fluid ">
+        <div class="section-header text-center">
+           
+               <h2 class="h2-section-title">
+             Slader
+
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+    <section class="   ">
+        <div class="container-fluid " style="overflow: hidden;;padding: 0!important; margin: 0!important">
+          <div class="row "> 
+            <div class="  container-fluid"  >
+                 <div class="overlay over-slider" id="particles-js" ></div>
+
+              <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+                          <!-- The slideshow -->
+              <div class="carousel-inner">
+              
+           
+                  <div class="carousel-item slider-bootstrap  ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider/1.jpg" alt="Chicago" >
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=9yb8BjGuWxE"
+                  data-lity="">
+<!--                   <i class=" fa-ico-play  icon-video" ></i>
+ -->                  </a>
+                  </div>
+                  <!---------------->
+                  <div class="carousel-item slider-bootstrap active ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider/1.jpg" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=gyI6XXYaAIc"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 <!---------------->
+                  <!---------------->
+                  @foreach($Slider as $Slid)  
+             
+
+
+                  <div class="carousel-item slider-bootstrap   ">
+                  <img class="img-slider-vido" src="storage/{{$Slid->img}}" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  " {{$Slid->link}}"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 @endforeach  
+                 <!---------------->
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+ <!-- =======End Videos ========================= --> 
+
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
 <section class=" title" >
@@ -133,7 +236,9 @@
 <!----------------End section title------------------------->
 
  <!-- Button to Open the Modal -->
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -159,7 +264,7 @@
     <div class="col-lg-6">
        <input type="text" class="form-control" name="phone"    placeholder="phone">
        <textarea class="form-control"          name="message"   placeholder="Last name"></textarea> 
- <!--    <div class="form-group">
+    <div class="form-group">
         {!! Form::label('icon',trans('admin.news')) !!}
         {!! Form::file('icon',['class'=>'form-control icon']) !!}
  
@@ -168,7 +273,7 @@
  
      <div class="form-group">
        <img name="icon" class="image" src="{{ asset( 'storage/news/No_Image.jpg')}} "   > 
-     </div> -->
+     </div>
    
 
    </div>
@@ -204,7 +309,7 @@
  <!--start section  statistk-->
  <section>
  
-     <div id="whyus" class="div-whyus">
+     <div id="whyus ">
         <div class="container">
          <div class="row"> 
 @foreach($whyus as $why)
@@ -393,36 +498,25 @@
  
  
  <!--============start Teachers=================================-->
-<!--     <svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
         <path class="paths-app-review" sty d="M0 100 C 20 0 50 0 100 100 Z"></path>
-    </svg> -->
+    </svg>
   <section class="app-review " id="review ">
   <div class="thm-container" id="Teachers"> 
       <section class="custm-head">
         <!----------------start  section title---------------------->
-        <section class=" title" style="display: none;">
+        <section class=" title">
             <div class="container ">
                 <div class="section-header text-center">
                   <!-- <span class="span-title">teacher We Do</span> -->
                        <h2 class="h2-section-title">
                       Our teacher</h2>
-
-
                       <div class="line">
                     </div><!--/.heazder-->
                   <span class="span-border"></span>
                   </div><!--/.cont div-title-->
             </div><!--/.line-->
         </section><!--/.sec-title-->
-<center>      
-
-  <img style="width: 200px; height: 200px;" src="https://www.tareequljannah.com/resources/img/homepage-collaborate.png">  
-
-</center>
-<br>
-<br>
-<br>
- 
         <!----------------End section title------------------------->
           </section>
         <div class="app-review-carousel owl-theme owl-carousel wow fadeInUp" data-wow-duration="2s"   data-wow-offset="100">
@@ -818,20 +912,13 @@
  
 
 <!-- =====Start footer======================================== -->
-<section class="footer-svg" style="background: #f4f4f4">
-    <img class="img-wave-footer" src="https://raw.githubusercontent.com/m01127673780/otlop-project/master/All/img/wave.png">
-
-    <svg  preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
-        <path class="paths-setionpath-footre" sty d="M0 100 C 20 0 50 0 100 100 Z"></path>
-    </svg>
  <footer class="footer-area footer--light">
-
+  
   <div class="footer-big">
-
     <!-- start .container -->
     <div class="container">
       <div class="row">
-              <div class="col-md-6 col-lg-3 col-sm-12">
+              <div class="col-md-3 col-sm-12">
           <div class="footer-widget">
             <div class="widget-about">
          <h3 class="footer-title">About us</h3>
@@ -845,7 +932,7 @@
 
           <!-- Ends: .footer-widget -->
         </div> <!-- end /.col-md-4 -->
-            <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="col-sm-6 col-lg-3">
                     <h3 class="footer-title">important links</h3>
                     <ul class="list-unstyled contact-info text-left" >
                     @foreach($footer as $foot)
@@ -859,7 +946,7 @@
    </li>
 </ul>
                 </div>
-                <div class="col-md-6 col-lg-3 col-sm-12 p-linhight-smol">
+                <div class="col-sm-6 col-lg-3 p-linhight-smol">
                     <h3 class="footer-title">Contact information</h3>
                     <!-- <p>Tel: 9892-62156 int 6126</p> -->
                     <p class="p-linhight-smol">
@@ -940,7 +1027,7 @@
           </div>
   </article>
 </footer>
- </section>
+ 
 <!--=======================================================--> 
 </body>
 
