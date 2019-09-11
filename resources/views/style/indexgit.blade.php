@@ -414,11 +414,13 @@
                   </div><!--/.cont div-title-->
             </div><!--/.line-->
         </section><!--/.sec-title-->
-<center>      
+        <div style="margin-top: 62px;">
+<center style="margin-top: 200px;">      
 
-  <img style="width: 200px; height: 200px;" src="https://www.tareequljannah.com/resources/img/homepage-collaborate.png">  
+  <img style="width: 200px; height: 200px; " src="https://www.tareequljannah.com/resources/img/homepage-collaborate.png">  
 
 </center>
+</div>
 <br>
 <br>
 <br>
@@ -819,11 +821,12 @@
 
 <!-- =====Start footer======================================== -->
 <section class="footer-svg" style="background: #f4f4f4">
+  
     <img class="img-wave-footer" src="https://raw.githubusercontent.com/m01127673780/otlop-project/master/All/img/wave.png">
 
-    <svg  preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
+   <!--  <svg  preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
         <path class="paths-setionpath-footre" sty d="M0 100 C 20 0 50 0 100 100 Z"></path>
-    </svg>
+    </svg> -->
  <footer class="footer-area footer--light">
 
   <div class="footer-big">

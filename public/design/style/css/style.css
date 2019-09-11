@@ -175,12 +175,7 @@ header{
 /************************** 
 * 10. app review styles 
 ***************************/
- .app-review {
-/*    background: #f4f4f4;
-*/    padding-top: 8px;
-    padding-bottom: 120px;
-    /* color: #000; */
-}
+
    .app-review .sec-title p {
     margin-top: 25px; }
   .app-review .owl-theme .owl-nav {
@@ -348,7 +343,7 @@ background-image: url('../img/slider/5.jpg');
 }
  */
  
-.carousel-indicators {
+.slider-top .carousel-indicators {
 display: none;
 }
 
@@ -356,14 +351,14 @@ display: none;
    
 /*End corsoul siader*/
 /*=====================================================*/
-.carousel-item.slider-bootstrap.carousel-tow{
+.slider-top .carousel-item.slider-bootstrap.carousel-tow{
   height: 100vh!important;
 }
-.carousel-item.slider-bootstrap  {
+.slider-top .carousel-item.slider-bootstrap  {
   height: 100vh!important;
 }
 
-.carousel-control-next,.carousel-control-prev{
+.slider-top .carousel-control-next,.carousel-control-prev{
      font-style: normal;
     background: #7cb62f;
     color: #fff;
@@ -387,16 +382,16 @@ display: none;
     color: #000;
   z-index: 999;
 }
-.carousel-control-prev{
+.slider-top .carousel-control-prev{
       margin-left: 33px;
     background: #7cb62f;
 
 }
-.carousel-control-next:hover,.carousel-control-prev:hover{
+.slider-top .carousel-control-next:hover,.carousel-control-prev:hover{
   background: #0c274c;
 }
   
-.carousel-control-next.top, .carousel-control-prev.top  {
+.slider-top .carousel-control-next.top, .carousel-control-prev.top  {
     width: 51px!important;
  }
 
@@ -648,20 +643,20 @@ a{text-decoration:none;}
 .slider-bootstrap  {
   height: 100vh!important;
 }
-.carousel-control-next,.carousel-control-prev{
-     font-style: normal;
-    background: #7cb62f;
+#demo-video .carousel-control-next, .carousel-control-prev {
+    font-style: normal;
+    /* background: #7cb62f; */
     color: #fff;
     border-radius: 50%;
-    height: 51px;
+    height: 45px;
     width: 45px;
-     font-weight: 1000;
+    font-weight: 1000;
     display: inline-block;
     font-size: 15px;
-    margin-right: 33px;
-      padding: 15px;
+    margin-right: -6px;
+    padding: 11px;
     margin-bottom: 10px;
-       text-align: center;
+    text-align: center;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -669,21 +664,23 @@ a{text-decoration:none;}
     transition: all 0.2s ease-in-out;
     opacity: 1;
     color: #000;
-  z-index: 999;
+    z-index: 999;
+    background: none!important;
+    /* width: 28px; */
 }
-.carousel-control-prev{
-      margin-left: 33px;
-    background: #7cb62f;
+#demo-video .carousel-control-prev{
+/*      margin-left: 33px;
+   background: #7cb62f;*/ 
 }
-.carousel-control-next:hover,.carousel-control-prev:hover{
+  .carousel-control-next:hover,.carousel-control-prev:hover{
   background: #0c274c;
 }
-.carousel-control-next.top, .carousel-control-prev.top  {
+ .carousel-control-next.top, .carousel-control-prev.top  {
     width: 51px!important;
  }
-.carousel-control-next,.carousel-control-prev{
+#demo-video .carousel-control-next,.carousel-control-prev{
   }
-.slider-video{
+#demo-video .slider-video{
       margin-left: 33px;
     background: #7cb62f;
     position: absolute;
@@ -712,27 +709,28 @@ top: 89% !important
   position: absolute;
     width: 100%;
 }
-    .fa-ico-play{
-        font-size: 50px;
-        color: #000;
-        position: absolute;
-        font-size: 100px;
-        color: red;
-        position: absolute;
-        left: 47%;
-        top: 41%;
-        z-index: 9999;
-            margin-bottom: 14px;
+   #demo-video  .fa-ico-play{
+       font-size: 50px;
+    color: #000;
+    position: absolute;
+    font-size: 100px;
+    color: red;
+    position: absolute;
+    left: 47%;
+    top: 24%;
+    z-index: 9999;
+    margin-bottom: 14px;
     background: #f00;
     color: #fff;
     cursor: pointer;
-    padding: 22px 22px;
+    padding: 10px 10px;
     border-radius: 50%;
     font-size: 22px;
     font-weight: bold;
+    font-size: 19px;
     }
 @media (max-width: 768px){
-.fa-ico-play {
+#demo-video .fa-ico-play {
  
     top: 20%;
     padding: 13px;
@@ -740,7 +738,7 @@ top: 89% !important
 }
 }
 @media (max-width: 768px){
-.carousel-control-next, .carousel-control-prev {
+#demo-video .carousel-control-next, .carousel-control-prev {
     width: 45px;
     margin-right: 33px;
     -moz-transition: all 0.2s ease-in-out;
@@ -1524,6 +1522,7 @@ border-bottom-left-radius: 30px;
 border-bottom-right-radius: 30px;
 border: none;
 width: 100%;
+background: #f4f4f4;
 }
 .card-body {   
 padding-bottom: 44px;
@@ -1899,21 +1898,12 @@ margin-right: 10px;
     fill: #f4f4f4;
     stroke:#f4f4f4;;
 }
-.app-review{
-    
-    background-color: #f4f4f4;
-     margin-top: -6px;
-}
+ 
 .paths-setionpath-footre {
     fill: #2a333b;
     stroke:#2a333b;;
 }
-.app-review{
-    
-    background-color: #f4f4f4;
-     margin-top: -6px;
-}
- 
+
 
 
 
@@ -1947,15 +1937,106 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
+#demo-video{
+/*    width: 840px;
+*/    height: 500px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: #111;
+    border: 3px solid white;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 0px 5px #000;
+    overflow: hidden;
+width:90%;
+}
 
  
+
+
+ .app-review .thm-container{
+    
+    background-color: #fff!important;
+     margin-top: -6px;
+     margin-bottom:120px;
+}
+ .app-review {
+    background-color: #ffffff;
+    margin-top: -6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+.img-slider-vido {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    padding-bottom: -20px;
+    border-bottom: 70px inset #111;
+
+ }
+
+
+#demo-video .carousel-indicators {
+display:  ;
+}
+
+
+#demo-video .carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255,255,255,.5);
+    top: 18px;
+}
+ 
+/*
+ @media(max-width:900px){
+#demo-video{
+    width: 90%;
+        height: 300px;
+ 
+
+} 
+@media(max-width:1200px){
+#demo-video{
+    width: 90%;
+        height: 300px;
+ */
+
+}
+ @media(max-width:768px){
+#demo-video{
+    width: 80%;
+    height: 300px;
+ 
+
+}
+ 
+}
+

@@ -400,7 +400,7 @@
   <div class="thm-container" id="Teachers"> 
       <section class="custm-head">
         <!----------------start  section title---------------------->
-        <section class=" title" style="display: none;">
+        <section class=" title" style="margin-top: 100px;">
             <div class="container ">
                 <div class="section-header text-center">
                   <!-- <span class="span-title">teacher We Do</span> -->
@@ -416,10 +416,12 @@
         </section><!--/.sec-title-->
 <center>      
 
-  <img style="width: 200px; height: 200px;" src="https://www.tareequljannah.com/resources/img/homepage-collaborate.png">  
+ <center  style="display: none">      
+
+  <img style="width: 200px; height: 200px; " src="https://www.tareequljannah.com/resources/img/homepage-collaborate.png">  
 
 </center>
-<br>
+ <br>
 <br>
 <br>
  
@@ -743,7 +745,7 @@
 
  <!--==============Start the perfect student blog ===================-->
 <!----------------start  section title---------------------->
-<section class="background-perfect-student" style="background:#f4f4f4;">
+<section class="background-perfect-student" style="-n_background:#f4f4f4;">
 <section class=" title">
     <div class="container ">
         <div class="section-header text-center">
@@ -818,7 +820,8 @@
  
 
 <!-- =====Start footer======================================== -->
-<section class="footer-svg" style="background: #f4f4f4">
+<section class="footer-svg"  >
+
     <img class="img-wave-footer" src="https://raw.githubusercontent.com/m01127673780/otlop-project/master/All/img/wave.png">
 
     <svg  preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
