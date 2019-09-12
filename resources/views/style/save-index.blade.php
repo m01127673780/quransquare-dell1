@@ -267,9 +267,9 @@
                 <div class="wrapper">
                        <div class="card cardhover">
                            <img src="storage/{{$course->icon}}"class="img-whyus">
-                              <div class="descriptions ">
-                                <h3 >{{$course->head_en}}</h3>
-                                  <p class="item-description text-right" align="justify">
+                              <div class="descriptions">
+                                <h3 style="color: red;">{{$course->head_en}}</h3>
+                                  <p class="item-description" align="justify">
  
                      <?php  $str =$course->text_en ?>
                      <?php
@@ -286,7 +286,8 @@
 
                       -->
                            </p>
-                            </div><!-- descriptions -->
+                              <button> <i class="fa  fa-youtube"></i>{{$course->color_diffe_en}}</button>
+                           </div><!-- descriptions -->
                        </div><!-- card cardhover -->
                   </div><!-- wrapper -->
               </div><!--contant -->
@@ -305,12 +306,6 @@
  <!-- ==============End  section All courses================= -->
 
 
-
-
-
- 
-      <!-- ==============start section All courses================= -->
- 
 
 
    <!-- =======start Videos ========================= --> 

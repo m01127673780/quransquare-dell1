@@ -483,78 +483,13 @@ color: red!important;
 
 
 /*start   All the Courses---------------------------------------*/
-
+ 
+  
 a{text-decoration:none;}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
     .textOverImage{background-size:cover!important;}
 }
-.textOverImage{
-    position:relative;
-    width:300px;
-    height:300px;
-    float:left;
-    margin:4px;
-    background-size:100%;
-    background-position:center;
-    transition:0.5s;
-    overflow:hidden;
-    border-radius:4px;
-    box-shadow:0 0 4px #000;
-  }
-  
-  .textOverImage:hover{
-    background-size:110%;
-  }
-  
-.textOverImage:before{
-  position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
-    background-color:rgba(0,0,0,0.3);
-    color:#fff;
-    padding:0 8px;
-    content:attr(data-title);
-    transition:0.5s 0.1s;
-    color:#fff;
-    font-weight:bold;
-    font-size:1.5em;
-}
-
-  .textOverImage:after{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    color:#fff;
-    padding:8px;
-    content:attr(data-text);
-    transition:0.5s;
-    padding-top:2em;
-    margin-top:8px;
-    transform:translateY(100%);
-    opacity:0;
-  }
-  
-  .textOverImage:hover:after{
-    transform:translateY(0);
-    transition:0.5s 0.1s;
-    opacity:1;
-  }
-.textOverImage:hover:before{
-    transform:translateY(0);
-    padding:8px;
-    background-color:rgba(0,0,0,0.6);
-    transition:0.5s;
-}
-
-.wrapper {
-
-    width: 100%;
-
+    
 }
 .cardhover{
     flex: 1;
@@ -574,44 +509,22 @@ a{text-decoration:none;}
     height:100%;
     transition: all .5s cubic-bezier(.8,.5,.2,1.4);
 }
-.descriptions{
-    position: absolute;
-    top:0px;
-    left:0px;
-    background-color: rgba(255,255,255,.7);
-    width:100%;
-    height:100%;
-    transition: all .7s ease-in-out;
-    padding: 20px;
-    box-sizing: border-box;
-    clip-path: circle(0% at 100% 100%);
-}
-.cardhover:hover .descriptions{
-    left:0px;
-    transition: all .7s ease-in-out;
-    clip-path: circle(75%);
-}
-.card:hover{
-    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
-    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
-    transform: scale(.97);
-}
-.cardhover:hover img{
-    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
-    transform: scale(1.6) rotate(20deg);
-    filter: blur(3px);
-}
+ 
+ 
 .card h1{
-    color: #ff3838;
+    color: #fff;
     letter-spacing: 1px;
     margin: 0px;
 }
 .cardhover p{
-      line-height: 27px;
+/*      line-height: 27px;
     height: 70%;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 20px;*/
 }
+
+
+/*  End All the Courses---------------------------------------*/
 .cardhover button{
     width: fit-content;
     height: 40px;
@@ -624,9 +537,68 @@ a{text-decoration:none;}
     box-shadow: 0px 2px 3px rgba(0,0,0,.4);
     transition: all .5s ease-in-out;
 }
+
 .cardhover button:hover{
     transform: scale(.95) translateX(-5px);
     transition: all .5s ease-in-out;
+    opacity: 
+}
+  .cardhover{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  } 
+   .descriptions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: red!important; */
+    width: 100%;
+/*    height: 50%;
+*/    z-index: 48;
+    background-color: red;
+    border-bottom-left-radius: 100%;
+    /* border-bottom-right-radius: 100%; */
+    background-image: url();
+    color: white;
+    padding: 3.125rem;
+    background: linear-gradient(80deg, #f321d6, #5121f3);
+    /* border-bottom-left-radius: 100%; */
+    /* padding: 3.125rem; */
+    /* background: linear-gradient(90deg, #f321d6, #5121f3); */
+    /* border-bottom-left-radius: 100%; */
+    text-align: right!important;
+     -webkit-transition:All .5s ease-in-out;
+         padding-bottom: 80px
+
+}
+.cardhover:hover .descriptions  {
+height: 10px;  
+     background-color:#121212 ;
+    color:transparent;
+    z-index: 1;
+ -webkit-transition:All  .5s ease-in-out;
+          padding-bottom:10px
+
+
+    }
+    .descriptions h3 {
+color: white;
+    /* top: 0; */
+ margin-top: -40px;
+font-size: 15px!important;
+    }
+
+.haed-card-curce {
+    top: 9px;
+    z-index: 999;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    /* border-bottom: 1px solid #fff; */
 }
 /*  End All the Courses---------------------------------------*/
 
@@ -1517,12 +1489,14 @@ font-weight: 100;
 margin-bottom: 30px;
 }
 .card {
-position: relative;
-border-bottom-left-radius: 30px;
-border-bottom-right-radius: 30px;
-border: none;
-width: 100%;
-background: #f4f4f4;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    width: 100%;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    height: 500px;
 }
 .card-body {   
 padding-bottom: 44px;
@@ -2040,3 +2014,7 @@ display:  ;
  
 }
 
+
+/*-------------------------------------*/
+
+ 
